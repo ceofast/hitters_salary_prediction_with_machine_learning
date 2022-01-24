@@ -284,7 +284,7 @@ pre_model = RandomForestRegressor().fit(X, y)
 feature_imp = pd.DataFrame({'Feature': X.columns, 'Value': pre_model.feature_importances_})
 feature_imp.sort_values("Value", ascending=False)
 
-odels = [('LR', LinearRegression()),
+models = [('LR', LinearRegression()),
           ("Ridge", Ridge()),
           ("Lasso", Lasso()),
           ("ElasticNet", ElasticNet()),
